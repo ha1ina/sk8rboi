@@ -103,6 +103,14 @@ void loop() {
       backward();
       Serial.println("Motors: backward");
     }
+    else if (val == 2) {
+      turnLeft();
+      Serial.println("Motors: left");
+    }
+    else if (val == 3) {
+      turnRight();
+      Serial.println("Motors: right");
+    }
  }
  delay(100);
 }
